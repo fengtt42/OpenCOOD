@@ -72,6 +72,17 @@ unzip train.zip
 Please refer to [data introduction](https://opencood.readthedocs.io/en/latest/md_files/data_intro.html)
 and [installation](https://opencood.readthedocs.io/en/latest/md_files/installation.html) guide to prepare
 data and install OpenCOOD. To see more details of OPV2V data, please check [our website.](https://mobility-lab.seas.ucla.edu/opv2v/)
+```shell
+conda create -n opencood python=3.8
+conda activate opencood
+# install pytorch. Cudatoolkit 11.3 are tested in our experiment.
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+# install dependency
+pip install -r requirements.txt
+# install this project. It's OK if EasyInstallDeprecationWarning shows up.
+python setup.py develop
+```
+在安装的过程中会报镜像错误，默认镜像和中科大的镜像都无法正常下载，可以安装清华镜像，并且增加pytorch镜像
 
 ## Quick Start
 ### Data sequence visualization
