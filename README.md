@@ -76,7 +76,7 @@ data and install OpenCOOD. To see more details of OPV2V data, please check [our 
 conda create -n opencood python=3.8
 conda activate opencood
 # install pytorch. Cudatoolkit 11.3 are tested in our experiment.
-conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3
 # install dependency
 pip install -r requirements.txt
 # install this project. It's OK if EasyInstallDeprecationWarning shows up.
